@@ -1,0 +1,12 @@
+insert into "EVENT_PLANNER"."CAFETERIA" values(1,'SUDOCODE',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(2,'CREATIVITY_DAY',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(3,'WHATTHEHACK',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(4,'IOTFAIR',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(5,'S/4HANADAY',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(6,'BANDHAN',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(7,'ANNUAL DY',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(8,'WOMEN IN TECH SUMMIT',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(9,'SAP TECHED',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(10,'ALUMINI DAY',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(11,'WHAT THE HACK',3,'2:00:00','4:00:00');
+insert into "EVENT_PLANNER"."CAFETERIA" values(12,'CHILDREN@WORK',3,'2:00:00','4:00:00');

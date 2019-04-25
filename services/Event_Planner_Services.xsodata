@@ -1,0 +1,16 @@
+service{
+   "EVENT_PLANNER"."CAFETERIA" as "Cafeteria" keys generate local "Id";
+   "EVENT_PLANNER"."FINANCE" as "Finance" keys generate local "Id";
+   "EVENT_PLANNER"."GFM" as "Gfm" keys generate local "Id";
+   "EVENT_PLANNER"."IT" as "IT" keys generate local "Id";
+   "EVENT_PLANNER"."PARKING" as "Parking" keys generate local "Id";
+   "EVENT_PLANNER"."REQUEST" as "Request" keys generate local "Id";
+   "EVENT_PLANNER"."ROOM_BOOKING" as "Room" keys generate local "Id";
+   "EVENT_PLANNER"."FINANCE_CHAT" as "FinanceChat" keys generate local "Id";
+   "EVENT_PLANNER"."CAFETERIA_CHAT" as "CafeteriaChat" keys generate local "Id";
+   "EVENT_PLANNER"."GFM_CHAT" as "GFMChat" keys generate local "Id";
+   "EVENT_PLANNER"."IT_CHAT" as "ITChat" keys generate local "Id";
+   "EVENT_PLANNER"."PARKING_CHAT" as "ParkingChat" keys generate local "Id";
+   "EVENT_PLANNER"."ROOM_CHAT" as "RoomChat" keys generate local "Id";
+} 
+  

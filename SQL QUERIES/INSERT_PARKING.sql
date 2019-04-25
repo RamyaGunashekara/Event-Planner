@@ -1,0 +1,1 @@
+insert into "EVENT_PLANNER"."PARKING" values(1,'WHAT THE HACK',10,'12:00:00','12:00:00');

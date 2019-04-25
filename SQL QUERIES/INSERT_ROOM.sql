@@ -1,0 +1,1 @@
+insert into "EVENT_PLANNER"."ROOM_BOOKING" values(1,'WHAT THE HACK','INDOOR','12:00:00','12:00:00');

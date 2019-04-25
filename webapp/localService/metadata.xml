@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<edmx:Edmx Version="1.0"
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:DataServices
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+        <Schema Namespace="Event_Planner.services.Event_Planner_Services"
+            xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+            xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="CafeteriaType">
+                <Key>
+                    <PropertyRef Name="Id" />
+                </Key>
+                <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="2147483647" />
+                <Property Name="USER_ID" Type="Edm.Double" />
+                <Property Name="EVENT_ID" Type="Edm.String" MaxLength="5000" />
+                <Property Name="NUM_OF_PEOPLE" Type="Edm.Int32" />
+                <Property Name="START_TYM" Type="Edm.Time" />
+                <Property Name="END_TYM" Type="Edm.Time" />
+            </EntityType>
+            <EntityType Name="ChatType">
+                <Key>
+                    <PropertyRef Name="Id" />
+                </Key>
+                <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="2147483647" />
+                <Property Name="USER_ID" Type="Edm.Double" />
+                <Property Name="EVENT_ID" Type="Edm.String" MaxLength="5000" />
+                <Property Name="SENDER" Type="Edm.String" MaxLength="1000" />
+                <Property Name="RECEIVER" Type="Edm.String" MaxLength="1000" />
+                <Property Name="TIME_MSG" Type="Edm.Time" />
+                <Property Name="MESSAGE" Type="Edm.String" MaxLength="5000" />
+            </EntityType>
+            <EntityType Name="FinanceType">
+                <Key>
+                    <PropertyRef Name="Id" />
+                </Key>
+                <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="2147483647" />
+                <Property Name="USER_ID" Type="Edm.Double" />
+                <Property Name="EVENT_ID" Type="Edm.String" MaxLength="5000" />
+                <Property Name="COST_CENTER" Type="Edm.Double" />
+                <Property Name="INVOICE" Type="Edm.Binary" />
+                <Property Name="PURCHASE_ORDER_NUMBER" Type="Edm.Double" />
+            </EntityType>
+            <EntityType Name="GfmType">
+                <Key>
+                    <PropertyRef Name="Id" />
+                </Key>
+                <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="2147483647" />
+                <Property Name="USER_ID" Type="Edm.Double" />
+                <Property Name="EVENT_ID" Type="Edm.String" MaxLength="5000" />
+                <Property Name="CATEGORY" Type="Edm.String" MaxLength="1000" />
+                <Property Name="ITEM" Type="Edm.String" MaxLength="1000" />
+                <Property Name="QUANTITY" Type="Edm.Int32" />
+                <Property Name="START_TYM" Type="Edm.Time" />
+                <Property Name="END_TYM" Type="Edm.Time" />
+            </EntityType>
+            <EntityType Name="ITType">
+                <Key>
+                    <PropertyRef Name="Id" />
+                </Key>
+                <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="2147483647" />
+                <Property Name="USER_ID" Type="Edm.Double" />
+                <Property Name="EVENT_ID" Type="Edm.String" MaxLength="5000" />
+                <Property Name="ITEM" Type="Edm.String" MaxLength="1000" />
+                <Property Name="QUANTITY" Type="Edm.Int32" />
+                <Property Name="NUM_OF_IT_PROFESSIONAL" Type="Edm.Int32" />
+                <Property Name="START_TYM" Type="Edm.Time" />
+                <Property Name="END_TYM" Type="Edm.Time" />
+            </EntityType>
+            <EntityType Name="ParkingType">
+                <Key>
+                    <PropertyRef Name="Id" />
+                </Key>
+                <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="2147483647" />
+                <Property Name="USER_ID" Type="Edm.Double" />
+                <Property Name="EVENT_ID" Type="Edm.String" MaxLength="5000" />
+                <Property Name="NUM_OF_PARKING_SPACES" Type="Edm.Int32" />
+                <Property Name="START_TYM" Type="Edm.Time" />
+                <Property Name="END_TYM" Type="Edm.Time" />
+            </EntityType>
+            <EntityType Name="RequestType">
+                <Key>
+                    <PropertyRef Name="Id" />
+                </Key>
+                <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="2147483647" />
+                <Property Name="USER_ID" Type="Edm.Double" />
+                <Property Name="EVENT_ID" Type="Edm.String" MaxLength="5000" />
+                <Property Name="NUM_OF_PEOPLE" Type="Edm.Int32" />
+                <Property Name="FROM_DATE" Type="Edm.DateTime" />
+                <Property Name="TO_DATE" Type="Edm.DateTime" />
+            </EntityType>
+            <EntityType Name="RoomType">
+                <Key>
+                    <PropertyRef Name="Id" />
+                </Key>
+                <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="2147483647" />
+                <Property Name="USER_ID" Type="Edm.Double" />
+                <Property Name="EVENT_ID" Type="Edm.String" MaxLength="5000" />
+                <Property Name="ROOM_NUMBER" Type="Edm.String" MaxLength="1000" />
+                <Property Name="START_TYM" Type="Edm.Time" />
+                <Property Name="END_TYM" Type="Edm.Time" />
+            </EntityType>
+            <EntityContainer Name="Event_Planner_Services" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="Cafeteria" EntityType="Event_Planner.services.Event_Planner_Services.CafeteriaType" />
+                <EntitySet Name="Chat" EntityType="Event_Planner.services.Event_Planner_Services.ChatType" />
+                <EntitySet Name="Finance" EntityType="Event_Planner.services.Event_Planner_Services.FinanceType" />
+                <EntitySet Name="Gfm" EntityType="Event_Planner.services.Event_Planner_Services.GfmType" />
+                <EntitySet Name="IT" EntityType="Event_Planner.services.Event_Planner_Services.ITType" />
+                <EntitySet Name="Parking" EntityType="Event_Planner.services.Event_Planner_Services.ParkingType" />
+                <EntitySet Name="Request" EntityType="Event_Planner.services.Event_Planner_Services.RequestType" />
+                <EntitySet Name="Room" EntityType="Event_Planner.services.Event_Planner_Services.RoomType" />
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
